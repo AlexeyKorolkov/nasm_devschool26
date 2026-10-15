@@ -1,0 +1,44 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "nasm_devschool26",
+	"build": {
+		/* 
+		   ВНИМАНИЮ СТУДЕНТОВ Школы разработчиков Прософт-Системы 2026-2027!
+		   Для владельцев Mac на Apple Silicon (M1, M2 ...) нужно раскомментировать
+		   строку со специальным dockerfile для Mac и закомментировать стандартный.
+		   Если ваш компьютер на базе Windows или Linux, то делать ничего не нужно.
+		 */
+
+        "dockerfile": "Dockerfile"			// Штатный Dockerfile
+		// dockerfile: "mac.dockerfile"		// Только для Mac!
+    },
+
+	/* 
+		ВНИМАНИЮ СТУДЕНТОВ Школы разработчиков Прософт-Системы 2026-2027!
+		Для владельцев Mac на Apple Silicon (M1, M2 ...) нужно раскомментировать
+		раздел "runArgs" для принудительного запуска эмуляции х86-64. Должна быть 
+		установлена утилита Rosetta 2.
+		Если ваш компьютер на базе Windows или Linux, то делать ничего не нужно.
+	 */
+
+	// "runArgs": [
+    //     "--platform", 
+	// 	"linux/amd64"
+    // ],
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "root"
+}
