@@ -35,9 +35,18 @@ softwareupdate --install-rosetta --agree-to-license
 Далее нужно запустить сборку контейнера и осуществить подключение к нему:
 
 1. В левом нижнем углу находим кнопку "Открыть удалённое окно"
+<img width="1571" height="532" alt="image" align="center" src="https://github.com/user-attachments/assets/324c0f9a-ec52-48ad-9a16-e3997b556100" />
+<p></p>
+
 2. В появившемся сверху выпадающем списке выбираем "Повторно открыть в контейнере"
+<img width="980" height="439" alt="image" align="center" src="https://github.com/user-attachments/assets/32f972f2-3e9f-4f1b-a68e-084d69fb3d79" />
+<p></p>
+
 3. Ждём сборку
 4. Если сборка прошла корректно, то VS Code переоткроется в среде контейнера. В разделе "Проводник" должны отобразиться файлы проекта. На кнопке удалённого подключения должна быть надпись с названием контейнера и контекстом Docker: `nasm_devschool26 @ rootless`
+<img width="1046" height="524" alt="image" src="https://github.com/user-attachments/assets/f3d6894b-5e82-497e-ac24-53914cd7c3f8" />
+<p></p>
+
 5. Профит
 
 ### Проверка
