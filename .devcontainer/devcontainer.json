@@ -6,26 +6,35 @@
 		/* 
 		   ВНИМАНИЮ СТУДЕНТОВ Школы разработчиков Прософт-Системы 2026-2027!
 		   Для владельцев Mac на Apple Silicon (M1, M2 ...) нужно раскомментировать
-		   строку со специальным dockerfile для Mac и закомментировать стандартный.
+		   строки со специальным dockerfile для Mac и поле "options",
+		   а также закомментировать стандартный dockerfile.
 		   Если ваш компьютер на базе Windows или Linux, то делать ничего не нужно.
 		 */
 
-        "dockerfile": "Dockerfile"			// Штатный Dockerfile
-		// dockerfile: "mac.dockerfile"		// Только для Mac!
+        "dockerfile": "Dockerfile"  // Штатный Dockerfile
+
+		/* Только для Mac!
+		"dockerfile": "mac.dockerfile",
+		"options": [
+			"--platform",
+			"linux/amd64"
+		]
+		//*/
     },
 
 	/* 
 		ВНИМАНИЮ СТУДЕНТОВ Школы разработчиков Прософт-Системы 2026-2027!
 		Для владельцев Mac на Apple Silicon (M1, M2 ...) нужно раскомментировать
-		раздел "runArgs" для принудительного запуска эмуляции х86-64. Должна быть 
-		установлена утилита Rosetta 2.
+		раздел "runArgs" для принудительного запуска эмуляции х86-64.
 		Если ваш компьютер на базе Windows или Linux, то делать ничего не нужно.
 	 */
 
-	// "runArgs": [
-    //     "--platform", 
-	// 	"linux/amd64"
-    // ],
+	/*"runArgs": [
+        "--platform=linux/amd64",
+        "--cap-add=SYS_PTRACE",
+        "--security-opt",
+        "seccomp=unconfined"
+    ],*/
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
