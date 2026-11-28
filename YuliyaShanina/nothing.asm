@@ -1,8 +1,6 @@
-global _start
-
-section .text
-
-_start:
-    mov rax, 60     ;
-    mov rdi, 0      ; 
-    syscall         ; 
+global _start       ; даем метке _start доступ извне
+section .text       ; секция кода
+_start:             ; точка входа в программу
+    mov rax, 60     ; 60 - номер системного вызова exit
+    mov rdi, 0      ; код возврата 0 - успешное завершение процесса
+    syscall         ; выполнение системного вызова exit 
