@@ -1,0 +1,3 @@
+execve("YuliyaShanina/nothing", ["YuliyaShanina/nothing"], 0x7ffd13d1aaa0 /* 34 vars */) = 0
+exit(0)                                 = ?
++++ exited with 0 +++
