@@ -1,0 +1,3 @@
+execve("./test", ["./test"], 0x7fff15e551d0 /* 90 vars */) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

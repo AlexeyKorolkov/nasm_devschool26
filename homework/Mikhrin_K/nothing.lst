@@ -1,0 +1,10 @@
+
+test.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <_start>:
+   0:	b8 3c 00 00 00       	mov    $0x3c,%eax
+   5:	bf 00 00 00 00       	mov    $0x0,%edi
+   a:	0f 05                	syscall
